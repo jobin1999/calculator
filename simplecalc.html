@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>simple calculator</title>
+	<script type="text/javascript">
+		function showsum()
+		{
+			var n1, n2, ans;
+			n1=document.frmsum.txtn1.value;
+			n1=document.frmsum.txtn2.value;
+			ans=n1+n2;
+			document.frmsum.txtn.value=ans;
+
+		}
+		function showsub()
+		{
+			var n1, n2, ans;
+			n1=document.frmsum.txtn1.value;
+			n1=document.frmsum.txtn2.value;
+			ans=n1-n2;
+			document.frmsum.txtn.value=ans;
+
+		}
+		function showmul()
+		{
+			var n1, n2, ans;
+			n1=document.frmsum.txtn1.value;
+			n1=document.frmsum.txtn2.value;
+			ans=n1*n2;
+			document.frmsum.txtn.value=ans;
+
+		}
+		function showdiv()
+		{
+			var n1, n2, ans;
+			n1=document.frmsum.txtn1.value;
+			n1=document.frmsum.txtn2.value;
+			ans=n1/n2;
+			document.frmsum.txtn.value=ans;
+
+		}
+	</script>
+</head>
+<body>
+<form>
+	<center>
+		ENTER A NUMBER 1
+		<input type="text" name="txtn1"><br>
+		ENTER A NUMBER 2
+		<input type="text" name="txtn2"><br>
+		RESULT
+		<input type="text" name="txtn"><br>
+		<input type="button" value ="+" onclick="showsum()">
+		<input type="button" value ="-" onclick="showsub()">
+		<input type="button" value ="*" onclick="showmul()">
+		<input type="button" value ="/" onclick="showdiv()">
+
+	</center>
+</form>
+</body>
+</html>
